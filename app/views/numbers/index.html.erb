@@ -1,0 +1,17 @@
+<h1>Welcome to the Great Number Game</h1>
+<p>I am thinking of a number between 1 and 100<br /<=> Take a guess!</p>
+
+<%= flash[:high] %><%= flash[:low] %><%= flash[:right] %>
+<form action="/index" method="post">
+	<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+	<input type="text" name="guess" autofocus><br />
+	<input type="submit" name="submit" value="Submit">
+</form>
+
+<% if flash[:high]
+%><div id="high">Too<br /> High</div><%
+elsif flash[:low]
+	%><div id="low">Too<br />Lowwwww</div><%
+elsif flash[:right]
+	%><div id="right">Got em!</div><%
+end %> 

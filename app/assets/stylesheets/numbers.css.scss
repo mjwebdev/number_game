@@ -1,0 +1,43 @@
+// Place all the styles related to the Numbers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+	text-align: center;
+}
+
+h1 {
+	padding-top: 2%;
+	letter-spacing: 2px;
+}
+p {
+	font-size: 16px;
+	letter-spacing: 1px;
+	padding-top: 5px;
+}
+input {
+	margin-top: 30px;
+}
+input[type="submit"] {
+	margin-top: 10px;
+}
+#low,
+#high,
+#right {
+	height: 100px;
+	width: 100px;
+	float: middle;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 5px;
+	color: white;
+	padding: 25px;
+	letter-spacing: 2px;
+}
+#low,
+#high {
+	background-color: red;
+}
+#right {
+	background-color: green;
+}
